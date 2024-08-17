@@ -1,8 +1,6 @@
 # WavePDE
 
-
 https://github.com/salastro/wavepde/assets/63563250/93cbb5e9-41a4-49d3-8b36-88a8a2b3adb2
-
 
 ## Overview
 
@@ -30,15 +28,17 @@ more.
 ## Installation
 
 1. Clone the repository:
-    ```sh
-    git clone https://github.com/salastro/wavepde.git
-    cd wavepde
-    ```
 
-2. Install the required packages:
-    ```sh
-    pip install -e .
-    ```
+   ```sh
+   git clone https://github.com/salastro/wavepde.git
+   cd wavepde
+   ```
+
+1. Install the required packages:
+
+   ```sh
+   pip install -e .
+   ```
 
 ## Usage
 
@@ -57,15 +57,15 @@ wavepde.py [OPTIONS]
 - `-t`: Factor for calculating the time step. Default is `sqrt(2)`.
 - `-T`: Final time for the simulation. Default is `1`.
 - `-f`: Initial condition as a string expression. Default is
-`"np.zeros_like(x)"`.
+  `"np.zeros_like(x)"`.
 - `-g`: Initial velocity condition as a string expression. Default is
-`"np.zeros_like(x)"`.
+  `"np.zeros_like(x)"`.
 - `--bndry`: Boundary condition for 2D simulations (`dirichlet` or `neumann`).
-Default is `neumann`.
+  Default is `neumann`.
 - `--source`: Amplitude and angular frequency of the source for 2D simulations.
-Default is `[0.5, 2]`.
+  Default is `[0.5, 2]`.
 - `--video`: Name of the video file to save the animation. If not provided, the
-animation will be displayed instead.
+  animation will be displayed instead.
 
 ### Example
 
@@ -86,9 +86,9 @@ wavepde --dim 1 -f "np.sin(np.pi * x)" -g "np.zeros_like(x)" --source 0 --video 
 
 - `src/wavepde/`: Main package directory.
   - `Plot.py`: Contains `Wave1DAnim` and `Wave2DAnim` classes for animating the
-  simulations.
+    simulations.
   - `Wave.py`: Contains `Wave1D` and `Wave2D` classes for setting up the wave
-  equations.
+    equations.
 - `main.py`: Main script for running the simulations and animations.
 
 ## Contributing
@@ -107,4 +107,4 @@ along with a detailed description.
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file
 for details.
 
----
+______________________________________________________________________
